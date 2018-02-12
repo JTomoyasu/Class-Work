@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function stairs(n) {
+            var s = "";
+            var c = n;
+            for (var i = 0; i < n; i++) {
+                for (var j = n-c; j < n; j++) {
+                    s = s + " ";
+                }
+                c--;
+                for (var j = c; j < n; j++) {
+                    s += "_";
+                }
+                console.log(s);
+                s ="";
+            }
+        }
+        stairs(10);
+
+    </script>
+</body>
+
+</html>
